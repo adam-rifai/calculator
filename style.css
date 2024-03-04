@@ -1,50 +1,51 @@
-body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  background-color: hsl(0, 0%, 95%);
-  height: 100vh;
-  align-items: center;
+* {
   box-sizing: border-box;
+  margin: 0;
 }
 
 #calculator {
   font-family: Arial, Helvetica, sans-serif;
   background-color: hsl(0, 0%, 15%);
   border-radius: 15px;
-  max-width: 400px;
+  max-width: 500px;
   overflow: hidden;
+  margin: 20px auto;
 }
 
 #display {
   width: 100%;
   padding: 10px;
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: left;
   border: none;
-  background-color: hsl(0, 0%, 20%);
+  /* background-color: hsl(0, 0%, 20%); */
   color: #fff;
   border: none;
   outline: none;
+  background-color: black;
+  border-top: 5px solid black;
 }
 
 #keys {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-  padding: 10px;
+  padding: 20px;
+  border-top: 5px solid black;
 }
 
 button {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
+  /* width: 70px;
+  height: 70px; */
+  /* border-radius: 50%; */
   border: none;
   background-color: hsl(0, 0%, 30%);
   color: white;
   font-size: 2rem;
   font-weight: bold;
   cursor: pointer;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 button:hover {
@@ -65,4 +66,10 @@ button:active {
 
 .operator-btn:active {
   background-color: hsl(35, 100%, 75%);
+}
+.keys .equal {
+  grid-row: span 2;
+}
+.delete {
+  grid-column: span 2;
 }

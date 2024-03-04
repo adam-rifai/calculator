@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Calculator</title>
-  </head>
 
-  <body>
-    <div class="calculator" id="calculator">
-      <input type="text" id="display" readonly />
-      <div class="keys" id="keys">
-        <button onclick="append_to_display('+')" class="operator-btn">+</button>
-        <button onclick="append_to_display('7')">7</button>
-        <button onclick="append_to_display('8')">8</button>
-        <button onclick="append_to_display('9')">9</button>
-        <button onclick="append_to_display('-')" class="operator-btn">-</button>
-        <button onclick="append_to_display('4')">4</button>
-        <button onclick="append_to_display('5')">5</button>
-        <button onclick="append_to_display('6')">6</button>
-        <button onclick="append_to_display('*')" class="operator-btn">*</button>
-        <button onclick="append_to_display('1')">1</button>
-        <button onclick="append_to_display('2')">2</button>
-        <button onclick="append_to_display('3')">3</button>
-        <button onclick="append_to_display('/')" class="operator-btn">/</button>
-        <button onclick="append_to_display('0')">0</button>
-        <button onclick="append_to_display('.')">.</button>
-        <button onclick="calculate()">=</button>
-        <button onclick="clear_display()" class="operator-btn">C</button>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Calculator</title>
+</head>
+
+<body>
+  <div class="calculator" id="calculator">
+    <input type="text" id="display" readonly />
+    <div class="keys" id="keys">
+      <button onclick="append_to_display('+')" class="operator-btn">+</button>
+      <button onclick="append_to_display('7')">7</button>
+      <button onclick="append_to_display('8')">8</button>
+      <button onclick="append_to_display('9')">9</button>
+      <button onclick="append_to_display('-')" class="operator-btn">-</button>
+      <button onclick="append_to_display('4')">4</button>
+      <button onclick="append_to_display('5')">5</button>
+      <button onclick="append_to_display('6')">6</button>
+      <button onclick="append_to_display('*')" class="operator-btn">*</button>
+      <button onclick="append_to_display('1')">1</button>
+      <button onclick="append_to_display('2')">2</button>
+      <button onclick="append_to_display('3')">3</button>
+      <button onclick="append_to_display('/')" class="operator-btn">/</button>
+      <button onclick="append_to_display('0')">0</button>
+      <button onclick="append_to_display('.')">.</button>
+      <button onclick="calculate()" class="equal">=</button>
+      <button onclick="clear_display()" class="operator-btn">C</button>
+      <button class="delete" onclick="delete_last_element()">⌫</button>
     </div>
-    <script src="index.js"></script>
-  </body>
+  </div>
+  <script src="index.js"></script>
+</body>
+
 </html>
