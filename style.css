@@ -10,6 +10,7 @@
   max-width: 500px;
   overflow: hidden;
   margin: 20px auto;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 #display {
@@ -17,21 +18,22 @@
   padding: 10px;
   font-size: 3rem;
   text-align: left;
-  border: none;
   /* background-color: hsl(0, 0%, 20%); */
   color: #fff;
-  border: none;
+  /* border: none; */
   outline: none;
   background-color: black;
-  border-top: 5px solid black;
+  /* border-top: 5px solid black; */
+  border: 8px solid hsl(0, 0%, 30%);
 }
 
 #keys {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-  padding: 20px;
-  border-top: 5px solid black;
+  padding: 15px;
+  /* border-top: 5px solid black; */
+  border: 8px solid hsl(0, 0%, 30%);
 }
 
 button {
