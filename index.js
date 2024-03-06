@@ -19,3 +19,9 @@ function clear_display() {
 function delete_last_element() {
   displayEl.value = displayEl.value.slice(0, -1);
 }
+
+function copy_content() {
+  displayEl.select();
+  displayEl.setSelectionRange(0, 9999);
+  navigator.clipboard.writeText(displayEl.value);
+}

@@ -72,6 +72,6 @@ button:active {
 .keys .equal {
   grid-row: span 2;
 }
-.delete {
+/* .delete {
   grid-column: span 2;
-}
+} */
